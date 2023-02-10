@@ -1,12 +1,9 @@
-class Utils{
+class Utils {
+  String baseUrl = "https://kun.uz";
 
+  int myNumber = 100;
 
-String baseUrl = "https://kun.uz";
-
-int myNumber = 100;
-
-
-bool isMaxNew(int amount, int maxAmount, double rate, bool isDollar) {
+  bool isMaxNew(int amount, int maxAmount, double rate, bool isDollar) {
     if (isDollar) {
       return maxAmount < rate * amount;
     } else {
@@ -14,9 +11,7 @@ bool isMaxNew(int amount, int maxAmount, double rate, bool isDollar) {
     }
   }
 
-
-
-bool stringEquals(String main, String sub) {
+  bool stringEquals(String main, String sub) {
     if (main.replaceAll(" ", "").length < sub.replaceAll(" ", "").length) {
       return false;
     } else {
@@ -32,8 +27,7 @@ bool stringEquals(String main, String sub) {
     }
   }
 
-
-static String format(int k) {
+  static String format(int k) {
     if (k < 10) {
       return "0$k";
     } else {
@@ -41,18 +35,11 @@ static String format(int k) {
     }
   }
 
-
-
-String returnCardFormatText(String cardNumber) {
-  String part1 = cardNumber.substring(0, 4);
-  String part2 = cardNumber.substring(4, 8);
-  String part3 = cardNumber.substring(8, 12);
-  String part4 = cardNumber.substring(12, 16);
-  return "$part1 $part2 $part3 $part4";
-}
-
-
-
-
-
+  String returnCardFormatText(String cardNumber) {
+    String part1 = cardNumber.substring(0, 4);
+    String part2 = cardNumber.substring(4, 8);
+    String part3 = cardNumber.substring(8, 12);
+    String part4 = cardNumber.substring(12, 16);
+    return "$part1 $part2 $part3 $part4";
+  }
 }
