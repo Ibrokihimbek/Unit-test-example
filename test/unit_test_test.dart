@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   group(
-    "UTILS CLASS PASSED",
+    "UTILS CLASS",
     () {
       test(
         "IS MAX NEW PASSED",
@@ -45,7 +45,7 @@ void main() {
         },
       );
       group(
-        "UTILS FIELDS PASSED",
+        "UTILS FIELDS",
         () {
           test(
             'BASE URL PASSED',
